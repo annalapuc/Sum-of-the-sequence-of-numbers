@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Enter two numbers:");
+        Scanner in = new Scanner(System.in);
+            int a=in.nextInt();
+            int b=in.nextInt();
+
+            int suma=0;
+                for (int i=a; i<=b; i++)
+                    {
+                        suma+=i;
+                    }
+                System.out.println(suma);
+
+            suma=0;
+            int c=a;
+                do 
+                    {
+                        suma+=c;
+                        c++;
+                    } while(c<=b);
+                 System.out.println(suma);
+
+            suma=0;
+                while(a<=b)
+                    {
+                        suma+=a;
+                        a++;
+                    }
+                System.out.println(suma);
+    }}
+
